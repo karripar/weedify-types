@@ -164,7 +164,7 @@ type ProfilePicture = {
   created_at: string;
 };
 
-export {
+export type {
   UserLevel,
   User,
   UserWithLevel,
@@ -196,5 +196,5 @@ export {
   FileInfo,
   RecipeResponse,
   TagResponse,
-  ProfilePicture
+  ProfilePicture,
 };
