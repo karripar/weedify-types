@@ -1,7 +1,7 @@
 {
   "name": "hybrid-types",
   "version": "1.0.0",
-  "description": "Types for hybridisovellukset",
+  "description": "Types for weedify project",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
@@ -29,7 +29,7 @@
     "prepare": "npm run build"
   },
   "private": true,
-  "author": "Ilkka Kylmäniemi",
+  "author": "Karri Partanen",
   "devDependencies": {
     "typescript": "^5.0.0"
   }

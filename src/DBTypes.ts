@@ -177,7 +177,7 @@ export type {
   Comment,
   Follow,
   Like,
-  Notification, 
+  Notification,
   NotificationWithUsername,
   NotificationWithRecipe,
   NotificationType,
