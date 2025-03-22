@@ -7,6 +7,8 @@ type User = {
   user_id: number;
   username: string;
   password: string;
+  email: string;
+  bio?: string;
   user_level_id: number;
   dietary_info: string | null;
   created_at: string;
