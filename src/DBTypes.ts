@@ -161,7 +161,7 @@ type TagResponse = {
 type ProfilePicture = {
   profile_picture_id: number;
   user_id: number;
-  file_path: string;
+  filename: string;
   filesize: number;
   created_at: string;
 };
