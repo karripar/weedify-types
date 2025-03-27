@@ -128,9 +128,9 @@ type Like = {
   created_at: string;
 };
 
-type Credentials = Pick<User, "username" | "password">;
+type Credentials = Pick<User, "email" | "password">;
 
-type RegisterCredentials = Pick<User, "username" | "password" | "dietary_info">;
+type RegisterCredentials = Pick<User, "username" | "password" | "email">;
 
 type AuthContextType = {
   user: UserWithNoPassword | null;
