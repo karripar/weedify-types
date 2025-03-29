@@ -118,7 +118,7 @@ type TagResult = RecipeTag & Tag;
 type Follow = {
   follow_id: number;
   follower_id: number;
-  following_id: number;
+  followed_id: number;
 };
 
 type Like = {
