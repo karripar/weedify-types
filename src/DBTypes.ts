@@ -34,6 +34,8 @@ type Recipe = {
   filename: string;
   filesize: number;
   media_type: string;
+  screenshots: string[];
+  thumbnail: string | null;
 };
 
 type Favorite = {
