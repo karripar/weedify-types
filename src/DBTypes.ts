@@ -122,6 +122,11 @@ type Follow = {
   created_at: string;
 };
 
+type FollowResponse = {
+  message: string;
+  follow_id: number;
+};
+
 type Like = {
   like_id: number;
   user_id: number;
