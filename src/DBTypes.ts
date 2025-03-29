@@ -27,11 +27,13 @@ type UserWithNoPassword = Omit<User, "password">;
 type Recipe = {
   recipe_id: number;
   user_id: number;
-  media_url: string;
-  media_type: string;
   instructions: string;
   cooking_time: number;
   created_at: string;
+  diet_type: string;
+  filename: string;
+  filesize: number;
+  media_type: string;
 };
 
 type Favorite = {
