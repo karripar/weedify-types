@@ -205,4 +205,5 @@ export type {
   RecipeResponse,
   TagResponse,
   ProfilePicture,
+  FollowResponse
 };
