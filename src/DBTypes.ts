@@ -34,6 +34,13 @@ type Recipe = {
   created_at: string;
 };
 
+type Favorite = {
+  favorite_id: number;
+  user_id: number;
+  recipe_id: number;
+  created_at: string;
+};
+
 type Ingredient = {
   ingredient_id: number;
   recipe_id: number;
@@ -205,5 +212,6 @@ export type {
   RecipeResponse,
   TagResponse,
   ProfilePicture,
-  FollowResponse
+  FollowResponse,
+  Favorite,
 };
