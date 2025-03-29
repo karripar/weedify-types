@@ -27,6 +27,7 @@ type UserWithNoPassword = Omit<User, "password">;
 type Recipe = {
   recipe_id: number;
   user_id: number;
+  title: string;
   instructions: string;
   cooking_time: number;
   created_at: string;
