@@ -92,6 +92,17 @@ type NotificationWithUsername = Notification & {
   username: string;
 };
 
+type DietType = {
+  diet_type_id: number;
+  diet_type_name: string;
+};
+
+type RecipeDietType = {
+  recipe_diet_id: number;
+  recipe_id: number;
+  diet_type_id: number;
+};
+
 type NotificationWithRecipe = NotificationWithUsername & {
   recipe_id: number;
 };
@@ -233,5 +244,7 @@ export type {
   Favorite,
   UserWithDietaryInfo,
   RecipeWithDietaryInfo,
-  RecipeWithDietaryIds
+  RecipeWithDietaryIds,
+  RecipeDietType,
+  DietType
 };
