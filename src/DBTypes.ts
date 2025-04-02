@@ -22,6 +22,10 @@ type UserWithProfilePicture = User & {
   profile_picture: string;
 };
 
+type UserWithDietaryInfo = UserWithProfilePicture & {
+  dietary_info: string | null;
+};
+
 type UserWithNoPassword = Omit<User, "password">;
 
 type Recipe = {
@@ -219,4 +223,5 @@ export type {
   ProfilePicture,
   FollowResponse,
   Favorite,
+  UserWithDietaryInfo,
 };
