@@ -48,7 +48,7 @@ type RecipeWithDietaryInfo = Recipe & {
 };
 
 type RecipeWithDietaryIds = Recipe & {
-  dietary_info: {diet_type_id: number}[];
+  dietary_id: number[];
 };
 
 type Favorite = {
