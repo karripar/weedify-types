@@ -47,6 +47,10 @@ type RecipeWithDietaryInfo = Recipe & {
   dietary_info: string | null;
 };
 
+type RecipeWithDietaryIds = Recipe & {
+  dietary_info: {diet_type_id: number}[];
+};
+
 type Favorite = {
   favorite_id: number;
   user_id: number;
@@ -228,5 +232,6 @@ export type {
   FollowResponse,
   Favorite,
   UserWithDietaryInfo,
-  RecipeWithDietaryInfo
+  RecipeWithDietaryInfo,
+  RecipeWithDietaryIds
 };
