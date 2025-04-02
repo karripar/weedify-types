@@ -23,7 +23,7 @@ type UserWithProfilePicture = User & {
 };
 
 type UserWithDietaryInfo = UserWithProfilePicture & {
-  dietary_info: string | null;
+  dietary_restrictions: string | null;
 };
 
 type UserWithNoPassword = Omit<User, "password">;
