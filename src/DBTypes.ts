@@ -34,13 +34,17 @@ type Recipe = {
   title: string;
   instructions: string;
   cooking_time: number;
+  diffculty_level_id: number;
   created_at: string;
-  diet_type: string;
   filename: string;
   filesize: number;
   media_type: string;
   screenshots: string[];
   thumbnail: string | null;
+};
+
+type RecipeWithDietaryInfo = Recipe & {
+  dietary_info: string | null;
 };
 
 type Favorite = {
@@ -224,4 +228,5 @@ export type {
   FollowResponse,
   Favorite,
   UserWithDietaryInfo,
+  RecipeWithDietaryInfo
 };
