@@ -26,6 +26,10 @@ type UserWithDietaryInfo = UserWithProfilePicture & {
   dietary_restrictions: string | null;
 };
 
+type UserWithDietaryIds = UserWithProfilePicture & {
+  dietary_id: number[];
+};
+
 type UserWithNoPassword = Omit<User, "password">;
 
 type Recipe = {
@@ -246,5 +250,6 @@ export type {
   RecipeWithDietaryInfo,
   RecipeWithDietaryIds,
   RecipeDietType,
-  DietType
+  DietType,
+  UserWithDietaryIds
 };
