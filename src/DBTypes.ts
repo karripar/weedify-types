@@ -217,6 +217,13 @@ type UserCheck = {
   email?: string;
 };
 
+type ResetToken = {
+  token_id: number;
+  user_id: number;
+  token: string;
+  expires_at: string;
+}
+
 export type {
   UserLevel,
   User,
@@ -258,5 +265,6 @@ export type {
   RecipeDietType,
   DietType,
   UserWithDietaryIds,
-  UserCheck
+  UserCheck,
+  ResetToken
 };
