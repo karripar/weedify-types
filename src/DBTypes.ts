@@ -211,6 +211,12 @@ type ProfilePicture = {
   created_at: string;
 };
 
+type UserCheck = {
+  user_id: number;
+  username?: string;
+  email?: string;
+};
+
 export type {
   UserLevel,
   User,
@@ -251,5 +257,6 @@ export type {
   RecipeWithDietaryIds,
   RecipeDietType,
   DietType,
-  UserWithDietaryIds
+  UserWithDietaryIds,
+  UserCheck
 };
