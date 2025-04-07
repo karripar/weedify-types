@@ -80,6 +80,8 @@ type Rating = {
   user_id: number;
   recipe_id: number;
   rating: number;
+  review: string;
+  created_at: string;
 };
 
 type Notification = {
