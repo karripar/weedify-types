@@ -56,6 +56,39 @@ type RecipeWithDietaryIds = Recipe & {
   dietary_id: number[];
 };
 
+// This type is used to represent a recipe with all fields, including optional ones
+// use with caution, as it may not represent a valid recipe in the database
+type RecipeWithAllFields = {
+  recipe_id?: number;
+  user_id?: number;
+  title?: string;
+  instructions?: string;
+  cooking_time?: number;
+  difficulty_level_id?: number;
+  portions?: number;
+  created_at?: string;
+  filename?: string;
+  filesize?: number;
+  media_type?: string;
+  screenshots?: string[];
+  thumbnail?: string | null;
+  difficulty_level?: string;
+  diet_types?: [
+    {
+      diet_type_id?: number;
+      name?: string
+    }
+  ],
+  ingredients?: [
+    {
+      ingredient_id?: number;
+      name?: string;
+      amount?: number;
+      unit?: string;
+    }
+  ]
+}
+
 type Favorite = {
   favorite_id: number;
   user_id: number;
@@ -270,5 +303,6 @@ export type {
   DietType,
   UserWithDietaryIds,
   UserCheck,
-  ResetToken
+  ResetToken,
+  RecipeWithAllFields
 };
