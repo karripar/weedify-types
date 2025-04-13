@@ -39,6 +39,7 @@ type Recipe = {
   instructions: string;
   cooking_time: number;
   difficulty_level_id: number;
+  portions: number;
   created_at: string;
   filename: string;
   filesize: number;
