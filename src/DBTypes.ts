@@ -78,7 +78,7 @@ type RecipeWithAllFields = {
       diet_type_id: number;
       name: string
     }
-  ],
+  ];
   ingredients: [
     {
       ingredient_id: number;
@@ -86,7 +86,7 @@ type RecipeWithAllFields = {
       amount: number;
       unit: string;
     }
-  ]
+  ];
 }
 
 type PartialFullRecipe = Partial<RecipeWithAllFields>;
