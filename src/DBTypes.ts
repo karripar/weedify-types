@@ -159,7 +159,7 @@ type Comment = {
   user_id: number;
   recipe_id: number;
   reference_comment_id: number | null;
-  comment_text: string;
+  comment: string;
   created_at: string;
 };
 
