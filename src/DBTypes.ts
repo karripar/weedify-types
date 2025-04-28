@@ -196,7 +196,7 @@ type Follow = {
   follow_id: number;
   follower_id: number;
   followed_id: number;
-  created_at: string;
+  created_at?: string;
 };
 
 type FollowResponse = {
