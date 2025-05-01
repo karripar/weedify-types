@@ -9,6 +9,7 @@ type User = {
   password: string;
   email: string;
   bio?: string;
+  filename?: string;
   user_level_id: number;
   dietary_info: string | null;
   created_at: string;
@@ -30,9 +31,7 @@ type UserWithDietaryIds = UserWithProfilePicture & {
   dietary_id: number[];
 };
 
-type UserWithNoPassword = Omit<User, "password"> & {
-  filename?: string;
-}
+type UserWithNoPassword = Omit<User, "password">
 
 type Recipe = {
   recipe_id: number;
