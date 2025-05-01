@@ -30,7 +30,9 @@ type UserWithDietaryIds = UserWithProfilePicture & {
   dietary_id: number[];
 };
 
-type UserWithNoPassword = Omit<User, "password">;
+type UserWithNoPassword = Omit<User, "password"> & {
+  filename?: string;
+}
 
 type Recipe = {
   recipe_id: number;
